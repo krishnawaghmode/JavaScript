@@ -43,3 +43,17 @@ let Unique_Union = [...new Set(fourthArr)];
 console.log(Unique_Union);
 
   ```
+## Reverse Number
+
+  ```javascript
+  var Num = 12345;
+                          var reverse = 0;
+                             while(Num > 0){
+                               var reminder = Num % 10;
+                               reverse = (reverse * 10) + reminder; 
+                              Num = parseInt(Num/10);
+                           }
+
+                           console.log('Reverse of Number:'+ reverse);
+
+  ```
