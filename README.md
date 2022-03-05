@@ -56,3 +56,50 @@ console.log(Unique_Union);
 
  console.log('Reverse of Number:'+ reverse);
  ```
+## Is given value an array or not ?
+
+  ```javascript
+  let Arr = [1,2,3,4,5];
+  console.log(typeof Arr)
+  // console.log(Object.prototype.toString.call(Arr));
+  console.log(toString.call(Arr));
+
+  if(toString.call(Arr) === "[object Array]"){
+      console.log("true");
+   }else{
+       console.log("false");
+  }
+ ```
+ ## Remove null,undefined,0,Nan,"" from Array ? 
+
+  ```javascript
+  let Arr1 = [false,0,NaN,6,undefined,50,'','Hi'];
+
+  let Arr2 =  Arr1.filter((v,i) => {
+   // console.log(v+'---------'+i);
+   if(v){
+     return v;
+   }
+  })
+
+ console.log(Arr2)
+ ```
+ ## Remove duplicate values from Array ? 
+
+  ```javascript
+  // first method
+  
+   let arr3 = [1,2,3,4,4,5,5,6,3]
+   let newarr = arr3.filter((v,i)=>{
+   // console.log(v+"-------"+arr3.indexOf(v)+"-------"+i)
+               return arr3.indexOf(v) == i
+        // return arr3.indexOf(v) != i
+     })
+  console.log(newarr)
+
+ // second method
+                
+      let arr4 = ["Admin","user","Coder","Admin","Hacker"]
+      let arr5 = [...new Set(arr4)]   
+      console.log(arr5) 
+ ```
