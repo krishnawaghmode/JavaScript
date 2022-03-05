@@ -103,3 +103,25 @@ console.log(Unique_Union);
       let arr5 = [...new Set(arr4)]   
       console.log(arr5) 
  ```
+## Prime Number
+
+  ```javascript
+                // 3/3,3/1 = prime no.
+                // 5/5,5/1 = prime no.
+                // 4/4,4/2,4/1 = not prime
+
+                var checkprime = 5;
+                isPrime = true;
+                for(cnt=2;cnt<checkprime;cnt++){
+                	if(checkprime%cnt==0){
+                		isPrime=false;
+                		break;
+                	}
+                }
+                if(isPrime==true){
+                	console.log("Prime No.")
+                }else{
+                	console.log("Not Prime No.")
+                }
+
+  ```
