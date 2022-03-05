@@ -17,3 +17,29 @@ function CheckLetter(Letter){
 console.log( CheckLetter('a') );
 
   ```
+  
+  ## Array Intersection & Union - ES6
+
+  ```javascript
+  // Intersection
+let oneArr = [1,2,3,4,5,6];
+let twoArr = [2,4,6,8];
+
+let threeArr = oneArr.filter((v) =>{
+	return twoArr.includes(v);
+})
+
+console.log('Intersection');
+console.log(threeArr);
+
+// Union
+
+let fourthArr = [...oneArr,...twoArr];
+console.log('Union');
+console.log(fourthArr);
+
+//Unique_Union
+let Unique_Union = [...new Set(fourthArr)];
+console.log(Unique_Union);
+
+  ```
