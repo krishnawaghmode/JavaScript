@@ -125,3 +125,14 @@ console.log(Unique_Union);
                 }
 
   ```
+  ## Finding Factorial
+
+  ```javascript
+ n =5 
+ fact =1;
+
+ for (;n>=1;n--) {
+ 	fact = fact * n;
+ }
+ console.log(fact);
+ ```
